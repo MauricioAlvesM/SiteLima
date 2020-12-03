@@ -15,7 +15,7 @@
 		margin: 0 auto;
 		padding: 0 auto;
 		min-height: 100vh;
-		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../imagens-sobremesas/teste.jpg) center/cover fixed;
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../imagens-sobremesas/entrada.jpg) center/cover fixed;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
