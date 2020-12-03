@@ -1,0 +1,357 @@
+/*Margim e padding em geral*/
+
+/*variavel para trocar a cor em geral*/
+:root{
+--corzinha:#f4cbd1;
+--corDentro:#9e606b;
+--font:'Open Sans', sans-serif;
+}
+
+
+* {
+	margin:0px;
+}
+
+h1, h2, h3, p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.principal{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.barra-navegacao {
+
+	width: 100%;
+	height: 15vh;
+	margin: auto;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.link-navegacao {
+ flex: 1;
+ width: 100%;
+ 
+}
+
+.link-navegacao ul{
+	margin-left: 50px;
+	display:inline;
+}
+
+.link-navegacao ul li{
+	list-style: none;
+	display:inline-block;
+	padding: 8px 25px;
+    margin-left: 30px;
+}
+
+.link-navegacao ul a{
+
+	color: black;
+	text-decoration: none;
+	font-size: 15px;
+
+}
+
+.nav-info{
+	color: black;
+	margin-right: 50px;
+}
+
+.link-navegacao ul li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: #fecd93;
+	display: block;
+	margin: auto;
+	transition: 2s;
+}
+.link-navegacao ul li:hover::after{
+	width: 100%;
+}
+
+.logo {
+	
+	width: 80px;
+	cursor: pointer;
+	margin-left: 50px;
+}
+
+.icone-menu {
+	
+	width: 30px;
+	cursor: pointer;
+}
+.linha {
+	
+	width: 85%;
+	height: 85vh;
+	margin: auto;
+	display: flex;
+	position: relative;
+}
+
+.col-esquerda {
+	
+	flex-basis: 45%;
+	height: 100%;
+	position: relative;
+}
+.conteudo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.conteudo h1{
+	font-size: 55px;
+	line-height: 55px;
+	letter-spacing: 1px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+	font-family: var(--font);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.link-botao{
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+	border-radius: 30px;
+	padding: 10px 15px;
+	display: inline-block;
+	margin-top: 50px;
+	background:black;
+}
+#link-botao{
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+	border-radius: 30px;
+	padding: 10px 15px;
+	display: inline-block;
+	margin-top: 50px;
+	background:black;
+}
+
+#link-botao:hover{
+    background: #fecd93 ;
+    transition: 0.5s;
+}
+.link-botao:hover{
+    background: #fecd93 ;
+    transition: 0.5s;
+}
+
+.conteudo p{
+	margin: 20px 0;
+	color: #adadad;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.arte {
+	width: 250px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+}
+
+span{
+
+	color:#fecd93; 
+}
+.col-direita{
+	flex-basis: 55%;
+}
+
+#imagem{
+	height: 100%;
+	display: block;
+	margin: auto;
+}
+
+.controlador{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.controlador ul li{
+	list-style: none;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	padding: 0 30px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	line-height: 50px;
+}
+
+.controlador ul li::after,
+.controlador .active::after{
+        content: '';
+        width: 2px;
+        height: 50px;
+        background: #371401;
+        position: absolute;
+        left: 0;
+    }
+
+.controlador .active::after{
+	background: #fecd93;
+}
+
+.controlador .active{
+	color: #371401;
+}
+
+
+#link-botao{
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+	background:black;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+
+    /*___________________CONTACT MAP______________________ */
+    .contact-map{
+        margin: 1.8rem;
+    }
+    .contact-form{
+        margin: 1rem 0;
+    }
+    .form-control{
+        width: 100%;
+        border: none;
+        padding: 1rem 0.6rem;
+        font-size: 0.95rem;
+        opacity: 0.8;
+        margin: 0.3rem;
+        outline: none;
+    }
+    .form-group{
+        display: flex;
+    }
+    
+    /*_________________FOOTER___________________*/
+    
+    #footer {
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .cont-footer{
+        width: 100%;
+        height: 20vh;
+        margin: auto;
+        padding: auto;
+    }
+    
+    .div-fotter{
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 10px;
+        display:inline-flex;
+        width: 150px;
+        height: 85%;
+        border:1px solid #000;
+    }
+    
+    .footer{
+        
+        border-top: 2px solid lightgrey;
+    }
+    
+    .footer-item h3{
+        color: #fff;
+        opacity: 0.8;
+    
+    }
+    .footer-item .para-text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        font-size: 0.9rem;
+        opacity: 0.6;
+    
+    }
+    .footer-item{
+        background: 
+        linear-gradient(rgba(0, 0, 0, 0.8), 
+            rgba(0, 0, 0, 0.7)), url(../imagens-sobremesas/wood.jpg) 
+            center/cover no-repeat;
+        color: #fecd93;
+        padding: 2rem;
+        /* border-radius:10px; */
+        
+    }
+    .conteudos{
+        width: 600px;
+    }
+    #divisao-footer{
+        display:flex;
+    }
+    .footer-icons{
+        display: inline;
+    }
+    
+    .footer-icons a{
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.4rem 0.6rem 1rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: 1s;
+    }
+    .footer-icons a:first-child{
+        margin-left: 0;
+    }
+    .footer-icons a:hover{
+        background:#fecd93;
+        color: #fff;
+    }
+    
+    .footer-item2{
+        margin-bottom: 3rem;
+    }
+    .footer-item2 h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        opacity: 0.8;
+    }
+    
+    .footer-item2 p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fecd93;
+    
+    }
+    .footer-item2 .footer-text{
+        margin: 0;
+        font-size: 0.9rem;
+        opacity: 0.6;
+    }
+    /*_________________FIM FOOTER___________________*/
+    
+    
+    
