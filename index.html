@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Home</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css-logo/main.css">
+	 <link rel = "icon" href = "images/favicon.png" type = "image/png" sizes = "16x16">
+    <!-- custom css -->
+    <!-- google fonts -->
+    <link rel = "stylesheet" href = "css/fonts.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "css/normalize.css">
+    <!-- magnific popup -->
+    <link rel = "stylesheet" href = "css/magnific-popup.css">
+    <!-- slick css -->
+    <link rel = "stylesheet" href = "css/slick.css">
+    <link rel = "stylesheet" href = "css/slick-theme.css">
+    <!-- animate on scroll -->
+    <link rel = "stylesheet" href = "css/aos.css">
+    
+</head>
+<body>
+
+<main>
+	<div class="principal"> <!--Início div principal-->
+		
+		<div class="barra-navegacao"> <!--Início div nav bar-->
+			<img src="imagens/Logo-rest1 - Copia.png" class="logo">
+			<div class="link-navegacao">
+			<ul>
+				<li><a href="promocoes.html">Promoçoes</a></li>
+				<li><a href="entradas.html">Entradas</a></li>
+				<li><a href="pratos.html">Pratos</a></li>
+				<li><a href="bebidas.html">Bebidas</a></li>
+				<li><a href="sobremesa.html">Sobremesas</a></li>
+				<li><a href="combos.html">Combos</a></li>
+				<li><a href="cadastro.html">Contatos</a></li>
+			</ul>
+		</div>
+
+
+		<div class = "nav-info">
+            <i class = "fas fa-phone"></i>
+            9-4002-8922</div>
+		<div id="link-botao"><i class = "fas fa-bars"></i></div>
+
+
+			
+		</div> <!--Fim div nav-->
+		
+		<div class="linha">
+			<div class="col-esquerda">
+				<div class="conteudo"> 
+					<h1><span>"</span>Food <span>doesn't have<br> a religion.</span> It is a religion<span>"</span></h1>
+					<p>Considered the best restaurant of Narnia We were born to make the difference</p>
+					<div>
+						<a href="cadastro.html" class="link-botao">Cadastre-se</a>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-direita">
+				<img src="./imagens-sobremesas/pic1.png" id="imagem">
+			</div>
+
+		</div>
+
+		<div class="controlador">
+			<ul>
+				<li class="active btn">01</li>
+				<li class="btn">02</li>
+				<li class="btn">03</li>
+				<li class="btn">04</li>
+			</ul>
+
+		</div>
+
+	</div> <!--Fim div principal-->
+
+
+	</main>
+
+	<script>
+		var btn = document.getElementsByClassName("btn");
+		var imagem = document.getElementById("imagem");
+		for(let i=0;i<btn.length; i++){
+			btn[i].addEventListener('click',function(){
+				let current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace("active","");
+				this.className += " active";
+			});
+		}
+
+		btn[0].onclick = function(){
+			imagem.src = "./imagens-sobremesas/pic1.png"
+		}	
+		btn[1].onclick = function(){
+			imagem.src = "./imagens-sobremesas/pic2.png"
+		}
+		btn[2].onclick = function(){
+			imagem.src = "./imagens-sobremesas/pic3.png"
+		}
+		btn[3].onclick = function(){
+			imagem.src = "./imagens-sobremesas/pic4.png"
+		}
+
+	</script>
+
+	<!--_______________FOOTER___________________-->    
+	<div class = "footer-item">
+		<div class = "footer-item2">
+				<h3>Nos encontre</h3>
+				<p class = "footer-text">Nárnia, 927-79558 - Guarda Roupa, Porta 2 - BR, 05663-010</p>
+			  </div>
+		  
+		  
+	
+
+
+			<!--_______________DIVISÃO FOOTER___________________-->
+		    <div id="divisao-footer">
+		        
+			        <!--_______________CONTEUDOS FOOTER___________________-->
+			    <div class="conteudos">
+			        <h3>Horário de Funcionamento</h3>
+			        <br>
+			        <p class = "para-text">Segunda-feira: FECHADO</p>
+			        <br>
+			        <p>Terça a Sexta</p>
+			       	 <p class = "para-text">7:00 Manhã - 23:00 Noite</p>
+			        <br>
+			        <p>Sabados e Domingos e Feriados</p>
+			        <p class = "para-text">11:00 Manhã - 22:00 Noite</p>
+			        <br>
+					<div>       
+						<p class = "para-text">Grupo &copy; Vingadores</p>
+			          	<p class = "para-text">Direitos Reservados.</p>
+					</div>
+				</div>
+					<!--_______________FIM CONTEUDOS FOOTER___________________-->
+
+					<!--_______________CONTEUDOS FOOTER___________________-->
+				<div  class="conteudos">
+					  <h3>Reservas e Atendimentos</h3>
+			          <br>
+			          <p class = "para-text"><i class = "fas fa-phone"></i>
+			            4002-8922 | 9991-2323</p>
+			          <br>
+			          <p class = "para-text"><i class="far fa-envelope"></i> grupovingadores@company.com</p>
+				</div>
+					<!--_______________FIM CONTEUDOS FOOTER___________________-->
+
+					
+				
+					
+
+					<!--_______________CONTEUDOS FOOTER___________________-->
+				<div  class="conteudos">
+					  	<h3>Contate-nos</h3>
+					  	<br>
+					  	<p>E-mail</p>
+						  <p class = "para-text"><i class="far fa-envelope"></i>
+							vingadores@restaurant.com</p>
+						  
+						  
+				</div>
+					<!--_______________FIM CONTEUDOS FOOTER___________________-->
+
+						<!--_______________CONTEUDOS FOOTER___________________-->
+				<div  class="conteudos">
+							  	<h3>Siga-nos</h3>
+						<div class = "footer-icons">
+				         	<a href = "https://www.facebook.com" target = "_blank">
+	             			<i class = "fab fa-facebook"></i>
+	            			</a>
+	            			<a href = "https://www.instagram.com" target = "_blank">
+	             			<i class = "fab fa-instagram"></i>
+	            			</a>
+	            			<a href = "https://www.twitter.com" target = "_blank">
+	              			<i class = "fab fa-twitter"></i>
+						</div>
+				</div><!--_______________FIM CONTEUDOS FOOTER___________________-->
+				
+			</div><!--_______________DIVISÃO FOOTER___________________-->
+					
+
+        </div><!--_______________FIM FOOTER___________________-->
+</body>
+</html>
